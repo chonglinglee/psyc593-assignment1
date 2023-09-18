@@ -1,8 +1,9 @@
 ---
 title: "Understanding World Population Dynamics"
 subtitle: "Assignment 1 - PSYC593"
-format:
-  html: default
+format: 
+  html:
+    self-contained: true
 date: today
 author: "Name"
 editor: 

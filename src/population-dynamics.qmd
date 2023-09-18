@@ -74,8 +74,8 @@ Load raw data
 
 ```{r load-data}
 # Read data ----
-world_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "world.csv"))
-kenya_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "kenya.csv"))
+world_data  <- read.csv(file = file.path(crit_path, "data", "raw_data", "world.csv"))
+kenya_data  <- read.csv(file = file.path(crit_path, "data", "raw_data", "kenya.csv"))
 sweden_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "sweden.csv"))
 ```
 
@@ -122,8 +122,8 @@ Create a new column called py in each dataset by adding the male and female tota
 
 ```{r create-new-variable-py}
 # Create new variable py = total person years for each data set
-world_data$py <- world_data$py.men + world_data$py.women
-kenya_data$py <- kenya_data$py.men + kenya_data$py.women
+world_data$py  <- world_data$py.men + world_data$py.women
+kenya_data$py  <- kenya_data$py.men + kenya_data$py.women
 sweden_data$py <- sweden_data$py.men + sweden_data$py.women
 ```
 
@@ -159,8 +159,8 @@ Call the function for each dataset
 
 ```{r compute-cbr}
 # Compute the CBR for each data set
-world_cbr <- compute_cbr(world_data)
-kenya_cbr <- compute_cbr(kenya_data)
+world_cbr  <- compute_cbr(world_data)
+kenya_cbr  <- compute_cbr(kenya_data)
 sweden_cbr <- compute_cbr(sweden_data)
 ```
 
@@ -207,8 +207,8 @@ Call the function for each dataset
 
 ```{r compute-asfr}
 # Compute ASFR for each data set
-world_data <- compute_asfr(world_data)
-kenya_data <- compute_asfr(kenya_data)
+world_data  <- compute_asfr(world_data)
+kenya_data  <- compute_asfr(kenya_data)
 sweden_data <- compute_asfr(sweden_data)
 ```
 Prints out the asfr column for both kenya and sweden dataset
@@ -258,8 +258,8 @@ Call the function
 
 ```{r compute-tfr}
 # Compute the TFR for each data set
-world_tfr <- compute_tfr(world_data)
-kenya_tfr <- compute_tfr(kenya_data)
+world_tfr  <- compute_tfr(world_data)
+kenya_tfr  <- compute_tfr(kenya_data)
 sweden_tfr <- compute_tfr(sweden_data)
 
 ```
@@ -311,8 +311,8 @@ Call the function for each dataset
 
 ```{r compute-cdr}
 # Compute the CDR for each data set
-world_cdr <- compute_cdr(world_data)
-kenya_cdr <- compute_cdr(kenya_data)
+world_cdr  <- compute_cdr(world_data)
+kenya_cdr  <- compute_cdr(kenya_data)
 sweden_cdr <- compute_cdr(sweden_data)
 
 world_cdr
@@ -355,8 +355,8 @@ Calls the function above for each dataset
 
 ```{r compute-asdr}
 # Compute ASDR for each data set
-world_data <- compute_asdr(world_data)
-kenya_data <- compute_asdr(kenya_data)
+world_data  <- compute_asdr(world_data)
+kenya_data  <- compute_asdr(kenya_data)
 sweden_data <- compute_asdr(sweden_data)
 
 ```
@@ -400,8 +400,8 @@ Calls the function above for each dataset
 
 ```{r compute-population-proportion}
 # Compute population proportion for each data set
-world_data <- compute_pop_prop(world_data)
-kenya_data <- compute_pop_prop(kenya_data)
+world_data  <- compute_pop_prop(world_data)
+kenya_data  <- compute_pop_prop(kenya_data)
 sweden_data <- compute_pop_prop(sweden_data)
 ```
 

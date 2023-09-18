@@ -68,8 +68,6 @@ Using rprojroot to find the root directory
 ```{r path-variables}
 # Path variables ----
 crit_path <- rprojroot::find_root(has_dir("data"))
-#here_path <- here::here()
-#data_path <- file.path(here_path, "data")
 ```
 
 Load raw data
@@ -79,10 +77,6 @@ Load raw data
 world_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "World.csv"))
 kenya_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "Kenya.csv"))
 sweden_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "Sweden.csv"))
-
-#world_data  <- readr::read_csv("./data/World.csv")
-#kenya_data  <- readr::read_csv("data/Kenya.csv")
-#sweden_data <- readr::read_csv("data/Sweden.csv")
 ```
 
 <!-- The `read_csv` function from the package `readr` -->

@@ -74,9 +74,9 @@ Load raw data
 
 ```{r load-data}
 # Read data ----
-world_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "World.csv"))
-kenya_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "Kenya.csv"))
-sweden_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "Sweden.csv"))
+world_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "world.csv"))
+kenya_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "kenya.csv"))
+sweden_data <- read.csv(file = file.path(crit_path, "data", "raw_data", "sweden.csv"))
 ```
 
 <!-- The `read_csv` function from the package `readr` -->

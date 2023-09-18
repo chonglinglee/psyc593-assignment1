@@ -1,0 +1,1 @@
+1. Change the compilation options for the html file to be self-contained2. Delete unused code3. Add additional spaces in several blocks of code to align similar types of objects4. Add answers5. Change raw file names to lower case in script
